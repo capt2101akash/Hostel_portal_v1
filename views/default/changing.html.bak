@@ -1,0 +1,27 @@
+{{extend 'layout.html'}}
+<title>Changing Room Status</title>
+<h2>Current Status:</h2>
+<ul>
+    <h3>Name Of The Students Who Want To Change Their Rooms :</h3>
+{{for room_changes in changes:}}
+<h4>
+    <li> <p>{{=(A(room_changes.name_of_room_changer,_href=URL("tell", args=change_rooms.id)))}}</p></li></h4>
+    <a href="show3.html"><button type="button">Check Status</button></a>
+{{pass}}
+</ul>
+<br>
+<h3>
+    Room Changing Form:
+</h3>
+<br>
+<style>
+div.cities{
+	background-color: black;
+	color:white;
+	margin:20px;
+	padding:20px;
+}
+</style>
+<div class="cities">
+{{=form}}
+</div>

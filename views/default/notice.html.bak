@@ -1,0 +1,3 @@
+{{extend 'layout.html'}}
+<h1>Upload Notices</h1>
+{{=form}}

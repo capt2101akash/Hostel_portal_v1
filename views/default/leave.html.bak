@@ -1,0 +1,7 @@
+{{extend 'layout.html'}}
+<title>Leave</title>
+<h1>Leave Application Form</h1>
+<div class="well">
+{{=form}}
+</div>
+{{=w}}

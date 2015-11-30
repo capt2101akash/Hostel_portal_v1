@@ -1,0 +1,14 @@
+{{extend 'layout.html'}}
+<title>Changing_Room_Status</title>
+<h2>Current Status:</h2>
+<ul>
+{{for db_change_room_services in:}}
+<p>{{=(A(db_change_room_services.topic_subject,_href=URL("show3", args=db_change_room_services.id )))}}</p>
+{{pass}}
+</ul>
+<br>
+<h3>
+   File another complaint:
+</h3>
+<br><br>
+{{=form}}

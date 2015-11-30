@@ -1,0 +1,14 @@
+{{extend 'layout.html'}}
+<title>Check Status of Query</title>
+<h1>Status: {{=db_topic.topic_title}}</h1>
+{{if len(comments):}}
+<h2>Comments</h2><br /><p>
+{{for db_post in comments:}}
+<p>{{=db_post.post_author}} says <u><i>{{=db_post.post_body}}</i></u></p>
+{{pass}}
+</p>
+{{else:}}
+<h2>No comments posted yet</h2>
+{{pass}}
+<h2>Post a comment</h2>
+{{=form}}

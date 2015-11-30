@@ -1,0 +1,122 @@
+{{extend 'layout.html'}}
+<h1>This is the menu.html template</h1>
+	<div id="main" role="main">
+	<ul id="menu2" class="menu">
+		<li tabindex="0">
+			Helix
+			<ul class="submenu helix">
+				<li>sub-One</li>
+				<li>sub-Two</li>
+				<li>sub-Three</li>
+				<li>sub-Four</li>
+				<li>sub-Five</li>
+				<li>sub-Six</li>
+				<li>sub-Seven</li>
+			</ul>
+		</li><li tabindex="0">
+			Wave
+			<ul class="submenu wave">
+				<li>sub-One</li>
+				<li>sub-Two</li>
+				<li>sub-Three</li>
+				<li>sub-Four</li>
+				<li>sub-Five</li>
+				<li>sub-Six</li>
+				<li>sub-Seven</li>
+			</ul>
+		</li><li tabindex="0">
+			Fan
+			<ul class="submenu fan">
+				<li>sub-One</li>
+				<li>sub-Two</li>
+				<li>sub-Three</li>
+				<li>sub-Four</li>
+				<li>sub-Five</li>
+				<li>sub-Six</li>
+				<li>sub-Seven</li>
+			</ul>
+		</li><li tabindex="0">
+			Papercut
+			<ul class="submenu papercut">
+				<li>sub-One</li>
+				<li>sub-Two</li>
+				<li>sub-Three</li>
+				<li>sub-Four</li>
+				<li>sub-Five</li>
+				<li>sub-Six</li>
+				<li>sub-Seven</li>
+			</ul>
+		</li><li tabindex="0">
+			Fly
+			<ul class="submenu fly">
+				<li>sub-One</li>
+				<li>sub-Two</li>
+				<li>sub-Three</li>
+				<li>sub-Four</li>
+				<li>sub-Five</li>
+				<li>sub-Six</li>
+				<li>sub-Seven</li>
+			</ul>
+		</li>
+	</ul><!-- /#menu2 -->
+
+	<ul id="menu1" class="menu">
+		<li tabindex="0">
+			Blind
+			<ul class="submenu blind">
+				<li>sub-One</li>
+				<li>sub-Two</li>
+				<li>sub-Three</li>
+				<li>sub-Four</li>
+				<li>sub-Five</li>
+				<li>sub-Six</li>
+				<li>sub-Seven</li>
+			</ul>
+		</li><li tabindex="0">
+			Venitian
+			<ul class="submenu venitian">
+				<li>sub-One</li>
+				<li>sub-Two</li>
+				<li>sub-Three</li>
+				<li>sub-Four</li>
+				<li>sub-Five</li>
+				<li>sub-Six</li>
+				<li>sub-Seven</li>
+			</ul>
+		</li><li tabindex="0">
+			Jaws
+			<ul class="submenu jaws">
+				<li>sub-One</li>
+				<li>sub-Two</li>
+				<li>sub-Three</li>
+				<li>sub-Four</li>
+				<li>sub-Five</li>
+				<li>sub-Six</li>
+				<li>sub-Seven</li>
+			</ul>
+		</li><li tabindex="0">
+			Fence
+			<ul class="submenu fence">
+				<li>sub-One</li>
+				<li>sub-Two</li>
+				<li>sub-Three</li>
+				<li>sub-Four</li>
+				<li>sub-Five</li>
+				<li>sub-Six</li>
+				<li>sub-Seven</li>
+			</ul>
+		</li><li tabindex="0">
+			Zipper
+			<ul class="submenu zipper">
+				<li>sub-One</li>
+				<li>sub-Two</li>
+				<li>sub-Three</li>
+				<li>sub-Four</li>
+				<li>sub-Five</li>
+				<li>sub-Six</li>
+				<li>sub-Seven</li>
+			</ul>
+		</li>
+	</ul><!-- /#menu1 -->
+</div>
+{{=BEAUTIFY(response._vars)}}

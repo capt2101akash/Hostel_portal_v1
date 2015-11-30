@@ -1,0 +1,45 @@
+<head>
+        <title>Hello World</title>
+        <style>
+            html, body {
+                width: 0%;
+                height: 0%;
+                margin: 0;
+                padding: 0;
+                background-color: green;
+            }
+            #container {
+                width: inherit;
+                height: inherit;
+                margin: 0;
+                padding: 0;
+                background-color: pink;
+            }
+            h1 {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Hello World</h1>
+        </div>
+    </body>
+function refreshAt(hours, minutes, seconds) {
+    var now = new Date();
+    var then = new Date();
+
+    if(now.getHours() > hours ||
+       (now.getHours() == hours && now.getMinutes() > minutes) ||
+        now.getHours() == hours && now.getMinutes() == minutes && now.getSeconds() >= seconds) {
+        then.setDate(now.getDate() + 1);
+    }
+    then.setHours(hours);
+    then.setMinutes(minutes);
+    then.setSeconds(seconds);
+
+    var timeout = (then.getTime() - now.getTime());
+    setTimeout(function() { window.location.reload(true); }, timeout);
+}
+refreshAt(21,43,0);

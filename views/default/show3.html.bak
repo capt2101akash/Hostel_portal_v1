@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+<title>Student Details</title>
+<h1>Details</h1>
+<h3>Name:{{=name_of_room_changer}}</h3>

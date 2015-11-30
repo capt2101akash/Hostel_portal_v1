@@ -1,0 +1,24 @@
+{{extend 'layout.html'}}
+<title>Room Allotments</title>
+<h1>Do Room allotment</h1>
+<table style="width:100%">
+<tr>
+    <th>Name</th>
+    <th>Room Partner</th>
+    <th>Room Number</th>
+</tr>
+
+    <tr>
+       {{for (l,i,j) in zip(y['name'],y['room_partner_name'],y['serial']):}}
+        <td>
+            {{=l}}
+        </td>
+        <td>
+            {{=i}}
+        </td>
+        <td>
+            {{=j}}
+        </td>
+    </tr>
+    {{pass}}
+</table>

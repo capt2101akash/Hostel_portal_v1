@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+<title>Wiki</title>
+<h1>Our Discussion Forum</h1>
+{{=content}}

@@ -1,0 +1,10 @@
+{{extend 'layout.html'}}
+<title>
+    Room Changing
+</title>
+<h1>Result of the request is given below </h1>
+{{if db.auth_user(auth.user_id).type_of_account=="Hostel Committee":}}
+	{{=form}}
+{{else:}}
+	{{=o1}}
+{{pass}}

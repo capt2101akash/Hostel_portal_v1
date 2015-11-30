@@ -1,0 +1,15 @@
+{{extend 'layout.html'}}
+<title>Complaint Register</title>
+<h1>Complaints</h1>
+{{count=0}}
+<ol>
+{{for complaintregister in complaints:}}
+    {{count=count+1}}
+    <b><p>{{=(A(complaintregister.complain_title,_href=URL("tell_outcome", args=complaintregister.id)))}}</p></b>
+    <a href="/tell_outcome/args"><button type="button">Check Status</button></a>
+{{pass}}
+</ol>
+<h2>
+    File a complaint
+</h2>
+{{=form}}

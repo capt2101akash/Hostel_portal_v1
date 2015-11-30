@@ -1,0 +1,7 @@
+{{extend 'layout.html'}}
+<h1>Result</h1>
+{{if db.auth_user(auth.user_id).type_of_account=="Hostel Committee":}}
+    {{=form}}
+{{else:}}
+{{=out}}
+{{pass}}

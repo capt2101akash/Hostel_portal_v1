@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from gluon.tools import Mail
+mail = auth.settings.mailer
+mail.settings.server = 'smtp.gmail.com:587'
+mail.settings.sender = 'akash.d14@iiits.in'
+mail.settings.login = paas
+
+## configure auth policy
+auth.settings.registration_requires_verification = True
+auth.settings.registration_requires_approval = True
+auth.settings.reset_password_requires_verification = True
+'''r=db().select(db.auth_user.registration_key,db.auth_user.first_name)
+l=[]
+for rs in r:
+    if rs.registration_key!=' ':
+        count+=1
+        l.append(rs.first_name)
+while(i<len(l)):
+    mail.send(to=['akash210197@gmail.com'],
+    subject='Approve registration',
+            # If reply_to is omitted, then mail.settings.sender is used
+            #reply_to='us@example.com',
+    message='To Approve registration of '+str(i)+' open link http://127.0.0.1:8000/welcome/appadmin/manage/db_admin')
+    i+=1
+'''
+db.define_table('apply_leave',
+                Field('reason_for_leave','text'),
+                Field('leave_from','date'),
+                Field('leave_upto','date')),
+                auth.signature)

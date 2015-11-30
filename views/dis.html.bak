@@ -1,0 +1,9 @@
+{{extend 'layout.html'}}
+{{for db_topic in get_db_topics:}}
+<ul>
+<p>{{=(A(db_topic.db_title, _href=URL("show", args=image.id)))}}</p>
+</ul>
+{{pass}}
+<h2>
+    Start a discussion
+</h2>

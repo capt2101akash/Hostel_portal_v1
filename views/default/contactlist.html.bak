@@ -1,0 +1,20 @@
+{{extend 'layout.html'}}
+<h1>Useful Contact Numbers</h1>
+<table style="width:100%">
+<tr>
+    <th>Name</th>
+    <th>Phone Number</th>
+</tr>
+
+    <tr>
+       {{for (l,i) in zip(y['name'],y['no']):}}
+        <td>
+            {{=l}}
+        </td>
+        <td>
+            {{=i}}
+        </td>
+    </tr>
+    {{pass}}
+</table>
+{{=BEAUTIFY(response._vars)}}

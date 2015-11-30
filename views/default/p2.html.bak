@@ -1,0 +1,7 @@
+{{extend 'layout.html'}}
+<style>
+    body {background-color: orange}
+    h1 {color: blue}
+</style>
+<b><i><h1><u>Useful contact nos.</u></h1></i></b>
+{{=BEAUTIFY(response._vars)}}

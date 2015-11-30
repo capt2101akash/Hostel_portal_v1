@@ -1,0 +1,13 @@
+{{extend 'layout.html'}}
+<style>
+    body {
+           background-color:blue;
+           background-image:url("http://127.0.0.1:8000/welcome/static/_2.12.3/p1.jpg");
+         }
+</style>
+<i><h1><b><u>This form is regarding the complaints and suggestions</u></b></h1></i>
+<form action="index">
+<input name ="visitor name" />
+<input type = "submit" />
+</form>
+{{=BEAUTIFY(response._vars)}}

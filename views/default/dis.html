@@ -1,0 +1,12 @@
+{{extend 'layout.html'}}
+<title>Discussion Forum</title>
+<h1>Current Discussions</h1>
+<ul>
+{{for db_topic in get_db_topics:}}
+<p>{{=(A(db_topic.topic_title,_href=URL("show2", args=db_topic.id)))}}</p>
+{{pass}}
+</ul>
+<h2>
+    Start a Discussion
+</h2>
+{{=form}}

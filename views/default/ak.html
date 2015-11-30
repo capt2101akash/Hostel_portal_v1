@@ -1,0 +1,12 @@
+{{extend 'layout.html'}}
+<title>Images</title>
+<h1>Current Images</h1>
+<ul>
+{{for image in images:}}
+<p>{{=(A(image.title, _href=URL("show", args=image.id)))}}</p>
+{{pass}}
+</ul>
+<h2>
+    Upload an image
+</h2>
+{{=form}}

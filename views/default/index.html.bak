@@ -1,0 +1,51 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+<title>Hostel</title>
+{{block header}}
+    <header class="container-fluid background">
+      <div class="jumbotron text-center">
+        <h1>
+            <u><font color="CBEEE"><b>WELCOME TO IIIT-S HOSTEL</b></font></u></h1>
+      </div>
+    </header>
+{{end}}
+<style>
+table,td{
+    width: 30px;
+    padding: 15px;
+    border: 8px solid red;
+    margin: 3px;
+}
+body{
+    background: url(http://127.0.0.1:8000/welcome/static/_2.12.3/oooo.jpg) no-repeat center center;
+}
+</style>
+<center><b><font color="yellow"><h2>NOTICE BOARD</h2></font></b></center>
+<div class="well">
+<table style="width:100%">
+    <tr>
+        {{for i in y['title']:}}
+                <td>
+                    <b>{{=i}}</b>
+                </td>
+    </tr>
+    {{pass}}
+</table>
+</div>
+{{block right_sidebar}}
+<div class="panel panel-info">
+  <div class="panel-heading"><h3 class="panel-title">
+      <i class="glyphicon glyphicon-cog"></i>
+      {{=T("INFORMATION")}}
+    </a></h3></div>
+  <ul class="list-group">
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/welcome/default/contacts"> Contact Nos.</a></li>
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/welcome/default/p4">{{=T('Rules and Regulation')}}</a></li>
+  </ul>
+</div>
+<p>
+    <u>
+        <b><font color=''> Number of visitors: {{=counter}} </font></b>
+    </u>
+</p>
+{{end}}
